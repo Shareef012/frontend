@@ -1,0 +1,181 @@
+/* General styles for the suggestion page */
+.suggestion-container {
+  padding: 5%;
+}
+
+/* Loading Spinner Style */
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a translucent background */
+  z-index: 9999;
+}
+
+.loading-container p {
+  color: white;
+  margin-top: 10px;
+}
+
+
+/* Flex container for the selection cards */
+.selection-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow the cards to wrap on smaller screens */
+}
+
+/* Styling for each card */
+.card {
+  width: 200px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 20px; /* Add space between cards */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Styling for the manual form */
+.manual-content,
+.sensors-content,
+.instructions {
+  text-align: center;
+  padding: 20px;
+}
+
+button.btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the form and input fields */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling for the Submit button */
+button.btn-success {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: 150px;
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 0.9rem;
+  }
+
+  .manual-content {
+    padding: 15px;
+  }
+
+  button.btn-primary {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  button.btn-success {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .selection-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 10px;
+  }
+
+  .form-group {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .manual-content,
+  .instructions {
+    padding: 10px;
+  }
+
+  button.btn-primary,
+  button.btn-success {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

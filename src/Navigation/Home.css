@@ -1,0 +1,59 @@
+/* Hover effect for the cards */
+.hover-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  /* Loading Spinner Style */
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a translucent background */
+  z-index: 9999;
+}
+
+.loading-container p {
+  color: white;
+  margin-top: 10px;
+}
+
+  
+  .hover-card:hover {
+    transform: translateY(-10px); /* Move the card upwards on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

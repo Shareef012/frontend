@@ -1,0 +1,162 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Loading Spinner Style */
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a translucent background */
+    z-index: 9999;
+  }
+  
+  .loading-container p {
+    color: white;
+    margin-top: 10px;
+  }
+  
+
+/* Container to center the registration box */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+/* The registration box styling */
+.registration-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Registration title */
+.registration-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input field and label styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button styling */
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background-color: #0056b3;
+}
+
+/* Link for login */
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-link small {
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* On tablet and smaller screens */
+    .registration-box {
+        padding: 30px;  /* Reduce padding for smaller devices */
+        max-width: 90%;  /* Allow the box to take more width */
+    }
+
+    .registration-title {
+        font-size: 20px;  /* Make the title smaller */
+    }
+
+    .input-group input,
+    .input-group select {
+        font-size: 14px;  /* Reduce font size of inputs */
+    }
+
+    .btn-register {
+        font-size: 14px;  /* Reduce button font size */
+    }
+
+    .login-link small {
+        font-size: 12px;  /* Reduce font size for the login link */
+    }
+}
+
+@media (max-width: 480px) {
+    /* On mobile screens */
+    .registration-box {
+        padding: 20px;  /* Further reduce padding */
+        max-width: 95%;  /* Make the box even wider on small screens */
+    }
+
+    .registration-title {
+        font-size: 18px;  /* Make the title even smaller */
+    }
+
+    .input-group input,
+    .input-group select {
+        font-size: 12px;  /* Reduce font size of inputs */
+    }
+
+    .btn-register {
+        font-size: 14px;  /* Smaller button text */
+        padding: 10px;  /* Adjust padding */
+    }
+
+    .login-link small {
+        font-size: 12px;  /* Make the login link text smaller */
+    }
+}
